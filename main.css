@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+    
+     font-family: 'Courgette', cursive;
+}
+body{
+    position: relative;
+   margin: 0;
+}
+
+.intro-text{
+    text-align: center;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 3rem;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.main-header{
+display: flex;
+margin: 0;
+justify-content: space-around;
+align-items: center;
+position: relative;
+ margin: 0 ;
+ padding: 1rem;
+ background-color: #a73737;
+ color: white;
+}
+
+.main-header button{
+    background-color: #7a2828;
+    border-style: none;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.main-header button:hover,
+.main-header button:active{
+ border-style: none;
+ background-color: saddlebrown;
+}
+
+
+
+.second-section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2rem 2rem;
+      
+}
+.second-section-div{
+    margin: 2rem;
+    width: 400px;
+    padding: 1rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.second-section-div img{
+ width: 90%;
+height: 90%;
+}
+
+.second-section-div h3{
+background-color: #a73737;
+}
+
+.image-div{
+width: 400px;
+height: 200px;
+}
+
+.section-1{
+  text-align: left;
+    position: absolute;
+    z-index: 5;
+  color: black;
+    height: 100vh;
+    width: 100vw;
+     max-width: 700px;
+     right: 25%;
+    top: 0;
+    background-color: whitesmoke;
+   display:none;
+   padding: 0 1rem;
+}
+
+
+.form-guy{
+       position: fixed;
+       width: -webkit-fill-available;
+     top: 0;
+      z-index: 10;
+ background: url(salad.jpg) no-repeat center center fixed;
+      display: none;
+    
+}
+form{
+  max-width: 700px;
+margin: 1rem auto;
+margin-bottom: 0;
+color: black;
+ width: 100vw;
+ height: 700px;  
+     margin-top: 1rem;
+    
+}
+form svg{
+    width: 20px;
+    color: black;
+}
+input{
+        display: block;
+        width: 90%;
+        margin: 1rem 0;
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+        height:50px; 
+        border-width: 0;
+        border-bottom-width: 5px;
+        font-size: 17px;
+        border-radius: 10px;
+        outline: none;
+        color: black;
+        background-color: #ffffff;
+        border-style: none;
+        padding-left: 1rem;
+}
+label{
+    display: block;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.div__icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   width: 90%;
+}
+.div__icon h3{
+     color: white;
+     margin-bottom: 1rem;
+}
+
+.close-form{
+    width: 30px;
+    cursor: pointer;
+}
+
+.inp{
+    height: 60px;
+}
+
+.submit-recipe{
+    background-color: #ffffffd2;
+    border-style: none;
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #7a2828;
+}
+
+.submit-recipe:hover,
+.submit-recipe:active{
+     border-style: none;
+ background-color: rgba(139, 69, 19, 0.849);
+ text-transform: capitalize;
+color: white;
+}
+
+
+
+.section-1-header{
+    display: flex;
+margin: 0;
+justify-content: space-between;
+ margin: 1rem 0 ;
+ margin-right: 0;
+ padding: 1rem;
+ background-color: #a73737;
+ color: white;
+}
+
+.section-1-header img{
+    width: 30px; 
+}
+
+.section-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        padding: 1rem;
+}
+
+.section-body img{
+    width: 350px;
+}
+
+.section-1 button{
+       background-color: #7a2828;
+    border-style: none;
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffffd2;
+}
+
+.section-1 button:active,
+.section-1 button:hover{
+       border-style: none;
+ background-color: rgba(139, 69, 19, 0.849);
+ text-transform: capitalize;
+color: white;
+}
+@media(max-width  : 600px){
+.main-header{
+    padding-left: 0;
+    padding-right: 0;
+}
+.div__icon{
+    align-items: center;
+}
+.close-form{
+    width: 30px;
+}
+    form{
+        width: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0.9rem;
+    padding-bottom: 0;
+    background: url(salad.jpg) no-repeat center center fixed;
+    background-size: cover;
+    }
+    .form-guy{
+    margin-top: 0;
+       height: 100vh;
+     
+    }
+    .section-1{
+      width: 100%;
+      height: 100vh; 
+      position: absolute; 
+      right: 0;
+      padding: 0;
+      background-color: rgba(255, 255, 255, 0.774)
+    }
+
+    .section-1-header{
+        padding: 0;
+       align-items: center;
+    }
+   .section-body img{
+       width: 150px;
+   }
+   .backdrop{
+       display: none;
+   }
+   input{
+       background-color: white;
+       margin-right: 0;
+       margin-left: 0.2rem;
+   }
+   .second-section-div{
+margin-left: 0;
+margin-right: 0;
+   }
+   .image-div{
+       width:300px;
+   }
+   .section-1 button{
+       margin: 0 1rem;
+   }
+   .ingre,
+   .section-1-instruct{
+    padding: 0 1rem;
+   }
+}
